@@ -29,7 +29,7 @@ relationships:
       join_columns:
         - product_id
     to:
-      dimension: Product Dimension
+      dimension: Product Dimension Local
       level: Product2
 
   - unique_name: normalized_target_fact_gross_margin_Date_Dimension
@@ -38,7 +38,7 @@ relationships:
       join_columns:
         - date_key
     to:
-      dimension: Date Dimension
+      dimension: Date Dimension Local
       level: 'Date '
 
   - unique_name: normalized_target_fact_sales_Fulfillment_Dimension
@@ -65,7 +65,7 @@ relationships:
       join_columns:
         - product_id
     to:
-      dimension: Product Dimension
+      dimension: Product Dimension Local
       level: Product2
 
   - unique_name: normalized_target_fact_sales_Date_Dimension
@@ -74,7 +74,7 @@ relationships:
       join_columns:
         - date_key
     to:
-      dimension: Date Dimension
+      dimension: Date Dimension Local
       level: 'Date '
 
 metrics:

@@ -1,11 +1,11 @@
-unique_name: Date Dimension
+unique_name: Date Dimension Local
 object_type: dimension
 label: Date Dimension
 type: time
 
 hierarchies:
 
-  - unique_name: Date Hierarchy
+  - unique_name: Date Hierarchy Local
     label: Date Hierarchy
     folder: Date
     filter_empty: "yes"

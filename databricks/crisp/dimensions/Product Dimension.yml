@@ -1,11 +1,11 @@
-unique_name: Product Dimension
+unique_name: Product Dimension Local
 object_type: dimension
 label: Product Dimension
 type: standard
 
 hierarchies:
 
-  - unique_name: Product Hierarchy
+  - unique_name: Product Hierarchy Local
     label: Product Hierarchy
     folder: Product
     filter_empty: "yes"
@@ -43,7 +43,7 @@ relationships:
 
   - unique_name: ProductDimension_SupplierDimension
     from:
-      hierarchy: Product Hierarchy
+      hierarchy: Product Hierarchy Local
       level: Product2
       dataset: normalized_target_dim_product
       join_columns:
@@ -63,7 +63,7 @@ relationships:
 
   - unique_name: ProductDimension_BrandDimension
     from:
-      hierarchy: Product Hierarchy
+      hierarchy: Product Hierarchy Local
       level: Product2
       dataset: normalized_target_dim_product
       join_columns:
@@ -75,7 +75,7 @@ relationships:
 
   - unique_name: ProductDimension_SubCategoryDimension
     from:
-      hierarchy: Product Hierarchy
+      hierarchy: Product Hierarchy Local
       level: Product2
       dataset: normalized_target_dim_product
       join_columns:
